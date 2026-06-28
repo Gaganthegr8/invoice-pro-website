@@ -1,0 +1,5 @@
+# Never commit installer binaries - GitHub blocks files over 100MB anyway.
+# Host these on GitHub Releases instead (see HOSTING.md).
+downloads/*.dmg
+downloads/*.exe
+downloads/*.zip

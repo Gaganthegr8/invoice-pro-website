@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invoice Pro — Invoicing software for Mac & Windows</title>
+<meta name="description" content="Invoice Pro is a desktop invoicing app for small businesses. Multiple companies, departments, GST-ready tax rows, and one-click PDF — all stored locally on your computer.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ═══════════════ NAV ═══════════════ -->
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand">
+      <img src="assets/logo.png" alt="" class="nav-logo">
+      <span>Invoice Pro</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#how-it-works">How it works</a>
+      <a href="#features">Features</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a href="#download" class="nav-cta">Download</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Desktop invoicing · Mac &amp; Windows</p>
+        <h1>Send a proper invoice<br>in the time it takes<br>to make coffee.</h1>
+        <p class="hero-sub">Multiple companies, departments, GST-style tax rows, and one-click PDFs — all running locally on your own computer. No subscriptions, no logins, no internet required.</p>
+
+        <div class="hero-actions">
+          <button class="btn-download primary" id="primary-download">
+            <svg class="os-icon" id="primary-os-icon" viewBox="0 0 24 24" fill="none"><path d="M0 0h24v24H0z" fill="none"/></svg>
+            <span>
+              <strong id="primary-download-label">Download for Mac</strong>
+              <small id="primary-download-sub">Apple Silicon &amp; Intel · v1.1.0</small>
+            </span>
+          </button>
+          <a href="#download" class="btn-download secondary" id="secondary-download">
+            <span>
+              <strong id="secondary-download-label">Download for Windows</strong>
+              <small>Windows 10 &amp; 11 · v1.1.0</small>
+            </span>
+          </a>
+        </div>
+        <p class="hero-note">Free to use · Your data stays on your device</p>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="ledger-stack">
+          <div class="ledger-sheet sheet-back"></div>
+          <div class="ledger-sheet sheet-mid"></div>
+          <div class="invoice-card" id="hero-invoice">
+            <div class="ic-head">
+              <div class="ic-brand">
+                <div class="ic-logo"></div>
+                <div>
+                  <div class="ic-bizname">Acme Studio</div>
+                  <div class="ic-bizline">Greater Noida, UP</div>
+                </div>
+              </div>
+              <div class="ic-title">
+                <div class="ic-invoice-word">INVOICE</div>
+                <div class="ic-num">INV-2026-014</div>
+              </div>
+            </div>
+            <div class="ic-rows">
+              <div class="ic-row"><span>UI/UX design</span><span class="ic-amt" data-final="₹45,000.00">₹0.00</span></div>
+              <div class="ic-row"><span>Frontend build</span><span class="ic-amt" data-final="₹54,000.00">₹0.00</span></div>
+              <div class="ic-row"><span>CGST (9%)</span><span class="ic-amt" data-final="₹8,910.00">₹0.00</span></div>
+              <div class="ic-row"><span>SGST (9%)</span><span class="ic-amt" data-final="₹8,910.00">₹0.00</span></div>
+            </div>
+            <div class="ic-total-wrap">
+              <div class="ic-total-row">
+                <span>Total due</span>
+                <span class="ic-total-amt" data-final="₹1,16,820.00">₹0.00</span>
+              </div>
+              <div class="ic-stamp" id="ic-stamp">PAID</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ TRUST STRIP ═══════════════ -->
+  <section class="trust-strip">
+    <div class="trust-inner">
+      <div class="trust-item"><span class="trust-num">100%</span><span>Offline-first</span></div>
+      <div class="trust-item"><span class="trust-num">₹0</span><span>Cost to use</span></div>
+      <div class="trust-item"><span class="trust-num">12</span><span>Currencies supported</span></div>
+      <div class="trust-item"><span class="trust-num">∞</span><span>Companies &amp; clients</span></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ HOW IT WORKS ═══════════════ -->
+  <section class="how" id="how-it-works">
+    <div class="section-head">
+      <p class="eyebrow">How it works</p>
+      <h2>From blank form to billed client, in four steps.</h2>
+    </div>
+
+    <div class="how-grid">
+      <div class="how-step">
+        <div class="how-frame">
+          <img src="assets/snippet-company.png" alt="Setting up a company profile with name, GST number, and bank details">
+        </div>
+        <div class="how-text">
+          <span class="how-tag">Step 1</span>
+          <h3>Set up your business</h3>
+          <p>Add your company name, GSTIN, PAN, and bank details once. Running more than one business or brand? Add as many companies as you need and switch between them per invoice.</p>
+        </div>
+      </div>
+
+      <div class="how-step reverse">
+        <div class="how-frame">
+          <img src="assets/snippet-items-tax.png" alt="Adding line items and tax rows like CGST and SGST with quick-add buttons">
+        </div>
+        <div class="how-text">
+          <span class="how-tag">Step 2</span>
+          <h3>Add items and taxes</h3>
+          <p>List what you're billing for, then quick-add CGST, SGST, IGST, a service fee, or TDS with one click each. Every tax stacks cleanly into the total — no spreadsheet math.</p>
+        </div>
+      </div>
+
+      <div class="how-step">
+        <div class="how-frame">
+          <img src="assets/snippet-clients.png" alt="Client directory showing saved clients with a Make Invoice button">
+        </div>
+        <div class="how-text">
+          <span class="how-tag">Step 3</span>
+          <h3>Reuse saved clients</h3>
+          <p>Every client you bill is saved automatically. Next time, pick them from a list and their details fill in instantly — or jump straight to a new invoice from their card.</p>
+        </div>
+      </div>
+
+      <div class="how-step reverse">
+        <div class="how-frame">
+          <img src="assets/snippet-dashboard.png" alt="Dashboard showing monthly revenue chart and collection percentage">
+        </div>
+        <div class="how-text">
+          <span class="how-tag">Step 4</span>
+          <h3>Watch the money come in</h3>
+          <p>The dashboard tracks what's paid, partial, unpaid, or on hold, with a month-by-month chart so you always know what's outstanding — exportable to CSV for your accountant.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FEATURES ═══════════════ -->
+  <section class="features" id="features">
+    <div class="section-head">
+      <p class="eyebrow">Built for how small businesses actually invoice</p>
+      <h2>Everything Tally-style software has,<br>without the learning curve.</h2>
+    </div>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🏢</div>
+        <h3>Multiple companies</h3>
+        <p>Run several businesses or brands from one app. Each keeps its own invoice numbering, bank details, and tax registration.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🗂</div>
+        <h3>Departments</h3>
+        <p>Split invoices by Sales, Finance, or any team you define — useful the moment more than one person is billing under your company.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🧮</div>
+        <h3>Stacked tax rows</h3>
+        <p>CGST, SGST, IGST, service fees, cess, even TDS deductions — add as many as your invoice actually needs, each shown as its own line.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔖</div>
+        <h3>Real payment status</h3>
+        <p>Unpaid, partially paid (with the exact balance tracked), paid, on hold, or cancelled — not just a yes/no checkbox.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌍</div>
+        <h3>12 currencies</h3>
+        <p>₹ $ € £ and more — including AUD, SGD, CAD, AED, JPY, CNY, NZD, and ZAR — for clients anywhere in the world.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🖨</div>
+        <h3>Print or PDF, instantly</h3>
+        <p>Every invoice opens print-ready or exports straight to a PDF you can email — no formatting to fix first.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">👤</div>
+        <h3>Client memory</h3>
+        <p>Once you've billed someone, they're saved. Pick them from a list next time instead of retyping their address every invoice.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📊</div>
+        <h3>Monthly reports</h3>
+        <p>A live bar chart and collection-percentage table by month, with one-click CSV export for your records or accountant.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3>Your data stays yours</h3>
+        <p>Everything saves locally on your computer. No account, no cloud sync, no one else can see your invoices.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ DOWNLOAD ═══════════════ -->
+  <section class="download" id="download">
+    <div class="download-inner">
+      <p class="eyebrow">Get the app</p>
+      <h2>Pick your platform.</h2>
+      <p class="download-sub">Both versions are full installers — they add a normal desktop shortcut and Start Menu / Launchpad entry, just like any other software.</p>
+
+      <div class="download-cards">
+        <div class="download-card">
+          <div class="dl-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="40" height="40"><path d="M16.365 1.43c0 1.14-.493 2.27-1.177 3.08-.744.9-2.01 1.59-3.013 1.59-.12 0-.23-.02-.3-.03-.014-.1-.04-.34-.04-.6 0-1.14.572-2.27 1.207-2.98.766-.86 2.103-1.51 3.07-1.55.027.13.053.33.053.49zm4.565 15.71c-.03.07-.463 1.58-1.518 3.12-.945 1.34-1.94 2.71-3.43 2.71-1.517 0-1.9-.88-3.63-.88-1.698 0-2.302.91-3.67.91-1.377 0-2.332-1.26-3.428-2.8-1.287-1.82-2.323-4.63-2.323-7.28 0-4.28 2.797-6.55 5.552-6.55 1.448 0 2.675.95 3.6.95.865 0 2.235-1.01 3.902-1.01.633 0 2.91.06 4.41 2.19-.116.075-2.336 1.36-2.336 4.05 0 3.1 2.694 4.2 2.78 4.23-.02.054-.43 1.46-1.42 2.91" /></svg>
+          </div>
+          <h3>macOS</h3>
+          <p>For Apple Silicon (M1/M2/M3) and Intel Macs · macOS 11+</p>
+          <a href="https://github.com/Gaganthegr8/invoice-pro-website/releases/download/v1.1.0/Invoice-Pro-1.1.0.dmg" class="btn-download primary full" id="mac-download-link">
+            <strong>Download .dmg</strong>
+            <small>v1.1.0 · ~95 MB</small>
+          </a>
+        </div>
+
+        <div class="download-card">
+          <div class="dl-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="38" height="38"><path d="M3 5.5l7.5-1v7.4H3V5.5zm8.5-1.13L21 3v8.9H11.5V4.37zM3 12.9h7.5v7.4l-7.5-1.06v-6.34zM11.5 13h9.5v8.9l-9.5-1.34V13z"/></svg>
+          </div>
+          <h3>Windows</h3>
+          <p>For Windows 10 and Windows 11 · 64-bit</p>
+          <a href="https://github.com/Gaganthegr8/invoice-pro-website/releases/download/v1.1.0/Invoice-Pro-Setup-1.1.0.exe" class="btn-download primary full" id="win-download-link">
+            <strong>Download .exe</strong>
+            <small>v1.1.0 · ~110 MB</small>
+          </a>
+        </div>
+      </div>
+
+      <p class="download-footnote">
+        First time opening it? Mac may show <em>"unidentified developer"</em> — right-click the app → Open. Windows may show a SmartScreen notice — click <em>More info → Run anyway.</em> Both are normal for new, unsigned apps and only appear once.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FAQ ═══════════════ -->
+  <section class="faq" id="faq">
+    <div class="section-head">
+      <p class="eyebrow">Questions</p>
+      <h2>Before you install</h2>
+    </div>
+
+    <div class="faq-list">
+
+      <details class="faq-item" open>
+        <summary>Is my invoice data sent anywhere?</summary>
+        <div class="faq-body">No. Invoice Pro stores everything directly on your computer — there's no server, no account, and no internet connection required to use the app. Your client list, invoices, and company details never leave your machine unless you choose to export or email them yourself.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Is it really free?</summary>
+        <div class="faq-body">Yes — there's no subscription, no per-invoice fee, and no feature paywall. Download it, install it, and use it for as many companies, clients, and invoices as you need.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Why does my computer warn me before opening it?</summary>
+        <div class="faq-body">Both Mac and Windows show a one-time warning for apps that aren't registered with a paid developer certificate. This is common for small, independent software and doesn't mean anything is wrong — on Mac, right-click the app and choose Open; on Windows, click "More info" then "Run anyway" in the SmartScreen prompt. You'll only see this the first time.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Can I run more than one company from the same install?</summary>
+        <div class="faq-body">Yes. Add as many companies as you need under the Companies page — each one keeps its own name, address, GSTIN, bank details, and invoice numbering, so you can switch between them when creating a new invoice.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Does it support GST-style taxes like CGST and SGST?</summary>
+        <div class="faq-body">Yes. The invoice form has one-click quick-add buttons for CGST, SGST, IGST, UGST, Cess, a generic service fee, and TDS (entered as a negative percentage so it deducts correctly). You can also add a fully custom tax with any name and percentage.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>What happens if a client only pays part of an invoice?</summary>
+        <div class="faq-body">Set the invoice status to "Partially Paid" and enter the amount received — the app calculates and displays the remaining balance both on screen and on the printed invoice, and reflects it in your dashboard totals.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Can I move my data to a new computer?</summary>
+        <div class="faq-body">Use the "Backup Data" button in the sidebar to export everything to a single file. You can keep that as a safety copy or bring it with you when setting up the app on another machine.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Does it work without an internet connection?</summary>
+        <div class="faq-body">Yes, fully. Every feature — invoices, clients, companies, reports, PDF export, and printing — works completely offline.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>What if I need help or find a bug?</summary>
+        <div class="faq-body">Reach out at <a href="mailto:support@yourdomain.com">support@yourdomain.com</a> — replace this with your real support email before launch.</div>
+      </details>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="assets/logo.png" alt="" class="nav-logo">
+      <span>Invoice Pro</span>
+    </div>
+    <p class="footer-tag">Desktop invoicing software for small businesses. Built to run entirely on your own computer.</p>
+    <div class="footer-links">
+      <a href="#how-it-works">How it works</a>
+      <a href="#features">Features</a>
+      <a href="#faq">FAQ</a>
+      <a href="#download">Download</a>
+    </div>
+    <p class="footer-copy">© 2026 Invoice Pro. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
